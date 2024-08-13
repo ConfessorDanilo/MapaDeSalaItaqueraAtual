@@ -1,0 +1,447 @@
+/*Formatação Geral*/
+body{
+    font-family: Roboto,"Roboto+Condensed";
+    border: 0;
+    margin: 0;
+    color: grey;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+/*Cabeçalho ou barra de navegação*/
+.logo img{
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B0E0E6;
+    padding: 15px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li{
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    text-decoration: none;
+    color: grey;
+}
+
+/*Header*/
+header{
+    background-image : url(../img/javaFundo.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    padding: 30px;
+}
+
+header, h1{
+    color: #B0E0E6;
+    font-size: 1em;
+}
+
+header p{
+    margin-bottom: 2em;
+    font-size: 1.7em;
+}
+
+
+@keyframes blink {
+    0% { background-color: transparent; }
+    50% { background-color: orangered; }
+    100% { background-color: transparent; }
+  }
+  
+.pisca {
+    animation: blink 1s infinite;
+    font-weight: bold;
+    color: midnightblue;
+    border-radius: 10px;
+  }
+
+/*.botao{
+    color: grey;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #B0E0E6;
+    font-size: .9em;
+    border-radius: 30%;
+}/*
+
+/*Sobre*/
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #B0E0E6;
+    color: grey;
+    justify-content: center;
+}
+
+#sobre h2{
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.foto img{
+    width: 60%;
+}
+
+.foto{
+    float: left;
+    width: 50%;
+}
+
+.texto{
+    float: right;
+    width: 60%;
+}
+
+#especialidades{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#especialidades div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#especialidades p{
+    line-height: 1.5;
+    margin: 2vh;
+    font-size: 1.2em;
+}
+
+#especialidades img{
+    margin: 10px 0;
+}
+
+#especialidades h2{
+    font-size: 2em;
+}
+
+/*Competencias*/
+#competencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#competencias h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#competencias h3, p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#competencias a{
+    text-decoration: none;
+}
+
+#competencias img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#competencias .comp p{
+    border-left: 10px groove #87CEEB;
+    border-right: 10px groove #87CEEB;
+    border-bottom: 10px groove #87CEEB;
+    border-radius: 20%;
+    margin-top: 0;
+    font-family: sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+
+}
+
+/*Hobbys*/
+#hobby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#hobby h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#hobby h3, p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#hobby img, video{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#hobby .hobby p{
+    margin-top: 0;
+    font-family: sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.5;
+
+}
+
+/*Contato*/
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #87CEEB;
+    padding-bottom: 20px;
+}
+
+#contato h2{
+    margin: 20px 20px 20px 20px;
+    font-size: 2em;
+    text-align: center;
+    color: mediumslateblue;
+}
+
+#contato > p{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: sans-serif;
+    color: grey;
+}
+
+#contato a{
+    text-decoration: none;
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/*Topo do site*/
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+
+/*Cabeçalho ou barra de navegação*/
+
+@media screen and (min-width: 768px){
+
+    html{
+        scroll-behavior: smooth;
+    }
+        
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    
+    /*Header*/
+    header{
+        height: 50vh;
+        justify-content: left;
+        color: azure;
+    }
+
+    header, h1{
+        color: #B0E0E6;
+        font-size: 2.10em;  
+    }
+
+    /*Sobre*/
+    #sobre{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 90vh;
+        justify-content: center;
+        min-height: 80vh;
+        text-align: center;
+    }
+
+    #sobre h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #sobre div{
+        flex-grow: 1;
+        flex-basis: 300px;
+        padding: 0 50px;
+        text-align: justify;
+    }
+    .texto p{
+        font-size: 1.4em;
+        text-align: left;
+    }
+
+    /*Especialidades*/
+    #especialidades{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #especialidades h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #especialidades div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /*Competencias*/
+    #competencias{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #competencias h2, h3{
+        width: 100%;
+        text-align: center;
+    }
+    #competencias .comp{
+        width: 33.3333333333%;
+        text-align: center;
+    }
+    
+    .suave:hover{
+        transition: .5s;
+        background-color: seagreen;
+        color: white;
+    }
+    
+    /*Hobby*/
+    #hobby{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #hobby h2, h3{
+        width: 100%;
+        text-align: center;
+    }
+    #hobby .hobby{
+        width: 33.3333333333%;
+        text-align: center;
+    }
+    #hobby p{
+        margin: 10px;
+    }
+    /*Contato*/
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-height: 40vh;
+        width: 100%;
+    }
+
+    #contato h2,
+    #contato p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #topo{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+}

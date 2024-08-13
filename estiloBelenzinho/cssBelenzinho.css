@@ -1,0 +1,384 @@
+/* Estilos gerais */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: darkorchid;
+  text-align: center;
+  padding: 1px;
+  font-weight: 700;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e9e9;
+}
+
+/* Estilo do header */
+header {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: orangered;
+}
+
+.logo {
+  margin-right: 1px;
+  /* Margem para separar a logo do nome da empresa */
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+/* Estilo do menu */
+nav {
+  background-color: orangered;
+  margin-top: 0;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  padding: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilo da div container */
+.container {
+  width: 100%;
+  /* Ocupa toda a largura disponível */
+  margin-bottom: 10px;
+}
+
+/* Estilo dos parágrafos e H2*/
+h2 {
+  margin-left: 15px;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.titulolabs{
+  margin-top: 20px ;
+  font-weight: 700;
+  color: darkorchid;
+}
+
+p {
+  margin-bottom: 10px;
+  /* Espaçamento entre os parágrafos */
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+span {
+  color: orangered;
+  font-weight: 700;
+
+}
+
+/* Estilo da galeria de produtos */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilo dos itens de produto */
+.product-item {
+  width: 30%;
+  /* Cada produto ocupa 25% da largura para exibir 4 por linha */
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: darkorchid;
+  margin-bottom: 50px;
+
+}
+
+/* Efeito de zoom ao passar o mouse na imagem do produto */
+.product-item img {
+  width: 100%;
+  border-radius: 100px;
+  /* Bordas arredondadas */
+  transition: transform 0.3s;
+  /* Adiciona transição suave ao efeito de zoom */
+  max-width: 200px;
+  text-align: center;
+}
+
+.product-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo do título piscante */
+.piscante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.piscante h2 {
+  font-weight: 700;
+  /* Fonte em negrito */
+  color: white;
+  /* Cor do texto */
+  text-align: center;
+  /* Centraliza o texto */
+  width: 100%;
+  /* Usa toda a largura disponível */
+  animation: piscarFundo 2s infinite alternate;
+  /* Animação do fundo piscante */
+  margin: 10px 0;
+
+}
+
+/*Efeito para mudar a cor do menu ao passar o mouse*/
+nav a {
+  text-decoration: none;
+  padding: 15px;
+  transition: background-color 0.5s;
+  /* Efeito de transição de cor de fundo */
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5em;
+    /* Tamanho menor para dispositivos móveis */
+  }
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+/* Efeito de hover para todas as telas */
+nav a:hover {
+  background-color: darkorchid;
+  /* Cor roxo ao passar o mouse */
+  border-radius: 50px;
+}
+
+/* Animação do fundo piscante */
+@keyframes piscarFundo {
+  from {
+    background-color: darkorchid;
+  }
+
+  to {
+    background-color: orangered;
+  }
+}
+
+
+/*carrocel de imagens cursos*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.image {
+  width: 25%; /* Garante que haja 4 imagens por linha no computador */
+  padding: 5px;
+  box-sizing: border-box;
+  transition: width 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+  margin: 0 auto;
+}
+
+.image img {
+  width: 100%;
+  height: auto;  
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 100%; /* Muda para duas imagens por linha no celular */
+    margin: 0 auto;
+  }  
+}
+
+/*-------------------------- final carrocel imagens cursos --------------------------*/
+
+/* Estilos para computador */
+.product-clinica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribui as divs igualmente na linha */
+  margin-bottom: 50px;
+
+}
+
+a{text-decoration: none;
+}
+
+
+.product-item img.email {
+  max-width: 50px; /* Defina o tamanho desejado para a imagem */
+  height: auto;
+
+}
+
+/* Estilos para celular */
+@media (max-width: 600px) {
+  .product-item img.email {
+    max-width: 30px; /* Reduza ainda mais o tamanho para dispositivos móveis, se necessário */
+
+  }
+}
+
+
+
+
+
+
+/* Estilo para dispositivos menores (como celulares) */
+@media screen and (max-width: 600px) {
+  .product-item {
+    width: 100%;
+    /* Um produto por linha em dispositivos menores */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    margin-bottom: 50px;
+    /* Espaçamento entre os produtos */
+  }
+}
+
+/* Estilo responsivo para celular */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1px;
+    /* Reduz a margem das laterais em telas menores */
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    margin-bottom: 50px;
+  }
+
+}
+
+/* Estilo responsivo para celular */
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+    /* Mostra o ícone do menu em telas menores */
+    /* position: absolute;*/
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .menu {
+    background-color: orangered;
+    margin-top: 0px;
+    text-decoration: none;
+
+  }
+
+
+  /* Estilo responsivo para celular */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      /* Muda a direção dos elementos para empilhados em telas menores */
+      text-align: center;
+      /* Centraliza o texto na versão mobile */
+    }
+
+  }
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  border: 2px solid #000;
+  padding: 8px;
+}
+
+tr {
+  background-color: #efefef;
+}
+
+th {
+  background-color: aqua;
+}
+
+@media (max-width: 600px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 2px solid #000;
+    background-color: #efefef;
+  }
+
+  td {
+    border: none;
+    border-bottom: 2px solid #000;
+    position: relative;
+    padding-left: 2%;
+    text-align: left;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: none;
+  }
+
+}
